@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="library.css"?>
+<library>
+    <location>Alexandria Library</location>
+    <description>lorem</description>
+    <librarian>
+        <name>Ahmed Kamal</name>
+        <email>oudaa898@gmail.com</email>
+    </librarian>
+    <books>
+        <book>
+            <title>Journy To The Center Of The Earth</title>
+            <isbn>898-4585</isbn>
+            <author>John Wick</author>
+            <preface>
+                <content>Advanture And Travel Around the world</content>
+            </preface>
+            <parts>
+                <part>
+                    <title>plane</title>
+                    <chapters>
+                        <chapter>
+                            <title>ship</title>
+                            <summary>Travels</summary>
+                            <sections>
+                                <section>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+               <book>
+            <title>Journy To The Center Of The Earth</title>
+            <isbn>898-4585</isbn>
+            <author>John Wick</author>
+            <preface>
+                <content>Advanture And Travel Around the world</content>
+            </preface>
+            <parts>
+                <part>
+                    <title>plane</title>
+                    <chapters>
+                        <chapter>
+                            <title>ship</title>
+                            <summary>Travels</summary>
+                            <sections>
+                                <section>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+    </books>
+        <books>
+        <book>
+            <title>Journy To The Center Of The Earth</title>
+            <isbn>898-4585</isbn>
+            <author>John Wick</author>
+            <preface>
+                <content>Advanture And Travel Around the world</content>
+            </preface>
+            <parts>
+                <part>
+                    <title>plane</title>
+                    <chapters>
+                        <chapter>
+                            <title>ship</title>
+                            <summary>Travels</summary>
+                            <sections>
+                                <section>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+               <book>
+            <title>Journy To The Center Of The Earth</title>
+            <isbn>898-4585</isbn>
+            <author>John Wick</author>
+            <preface>
+                <content>Advanture And Travel Around the world</content>
+            </preface>
+            <parts>
+                <part>
+                    <title>plane</title>
+                    <chapters>
+                        <chapter>
+                            <title>ship</title>
+                            <summary>Travels</summary>
+                            <sections>
+                                <section>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                    <paragraph>Here Is The Paragraph</paragraph>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+    </books>
+</library>

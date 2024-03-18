@@ -1,0 +1,68 @@
+library {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+location {
+  font-size: 24px;
+}
+description {
+  margin-bottom: 15px;
+}
+librarian {
+  margin-bottom: 20px;
+}
+librarian > name {
+  font-weight: bold;
+}
+librarian > email {
+  font-style: italic;
+  color: #666;
+}
+books {
+  margin-top: 20px;
+}
+book {
+  margin-bottom: 30px;
+}
+book > title {
+  font-size: 20px;
+}
+book > isbn {
+  color: #666;
+}
+book > author {
+  font-style: italic;
+}
+preface {
+  margin-bottom: 15px;
+}
+preface > content {
+  font-style: italic;
+  color: #888;
+}
+part {
+  margin-top: 15px;
+}
+part > title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+chapter {
+  margin-top: 10px;
+}
+chapter > title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+chapter > summary {
+  font-style: italic;
+  color: #888;
+}
+section {
+  margin-top: 10px;
+}
+section > paragraph {
+  margin-bottom: 5px;
+}

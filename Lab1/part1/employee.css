@@ -1,0 +1,15 @@
+employee {
+  margin-bottom: 20px;
+}
+name {
+  font-weight: bold;
+}
+phones {
+  margin-top: 5px;
+}
+address {
+  margin-top: 5px;
+}
+email {
+  font-style: italic;
+}
