@@ -1,0 +1,55 @@
+<!DOCTYPE employees SYSTEM 'employee.dtd'>
+<contacts>
+    <employee>
+        <name>Ahmed Kamal</name>
+        <phones>
+            <phone type="home">5011385</phone>
+            <phone type="work">01224807844</phone>
+        </phones>
+        <addresses>
+            <address>
+                <street>16 street</street>
+                <building>2</building>
+                <number>36</number>
+                <region>elsyouf</region>
+                <city>Alexandria</city>
+                <country>Egypt</country>
+            </address>
+            <address>
+                <street>16 street</street>
+                <building>2</building>
+                <number>36</number>
+                <region>elsyouf</region>
+                <city>Alexandria</city>
+                <country>Egypt</country>
+            </address>
+        </addresses>
+        <email>oudaa898@gmail.com</email>
+    </employee>
+    <employee>
+        <name>Ahmed Kamal</name>
+        <phones>
+            <phone type="home">5011385</phone>
+            <phone type="work">01224807844</phone>
+        </phones>
+        <addresses>
+            <address>
+                <street>16 street</street>
+                <building>2</building>
+                <number>36</number>
+                <region>elsyouf</region>
+                <city>Alexandria</city>
+                <country>Egypt</country>
+            </address>
+            <address>
+                <street>16 street</street>
+                <building>2</building>
+                <number>36</number>
+                <region>elsyouf</region>
+                <city>Alexandria</city>
+                <country>Egypt</country>
+            </address>
+        </addresses>
+        <email>oudaa898@gmail.com</email>
+    </employee>
+</contacts>
