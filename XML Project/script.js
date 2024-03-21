@@ -61,16 +61,9 @@ async function addEmployee() {
 }
 // -----------------------------------------------------------------------------------------------------------
 // Update Function:
+// Update Function:
 async function updateEmployee() {
   const empName = document.getElementById("empName").value;
-  const empEmail = document.getElementById("empEmail").value;
-  const empStreet = document.getElementById("empStreet").value;
-  const empBuilding = document.getElementById("empBuilding").value;
-  const empNumber = document.getElementById("empNumber").value;
-  const empRegion = document.getElementById("empRegion").value;
-  const empCity = document.getElementById("empCity").value;
-  const empCountry = document.getElementById("empCountry").value;
-  const empPhone = document.getElementById("empPhone").value;
 
   const xmlDoc = await loadEmployeeData();
 
@@ -86,6 +79,15 @@ async function updateEmployee() {
     const name = employeeNodes[i].getElementsByTagName("name")[0].textContent;
 
     if (name === empName) {
+      const empEmail = document.getElementById("empEmail").value;
+      const empStreet = document.getElementById("empStreet").value;
+      const empBuilding = document.getElementById("empBuilding").value;
+      const empNumber = document.getElementById("empNumber").value;
+      const empRegion = document.getElementById("empRegion").value;
+      const empCity = document.getElementById("empCity").value;
+      const empCountry = document.getElementById("empCountry").value;
+      const empPhone = document.getElementById("empPhone").value;
+
       employeeNodes[i].getElementsByTagName("email")[0].textContent = empEmail;
       employeeNodes[i].getElementsByTagName("street")[0].textContent =
         empStreet;
@@ -113,6 +115,7 @@ async function updateEmployee() {
     displayOutput(`Error: Employee with Name ${empName} not found.`);
   }
 }
+
 //------------------------------------------------------------------------------------------------------------
 //Delete Function:
 async function deleteEmployee() {
@@ -176,16 +179,29 @@ async function searchEmployee() {
 }
 // ---------------------------------------------------------------------------------------------------------
 //Save Function:
-function saveXML(xmlDoc) {
-  const xmlString = new XMLSerializer().serializeToString(xmlDoc);
-  const blob = new Blob([xmlString], { type: "text/xml" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "employee.xml";
-  a.click();
-  URL.revokeObjectURL(url);
+// Save Function:
+async function saveXML(xmlDoc) {
+  try {
+    const xmlString = new XMLSerializer().serializeToString(xmlDoc);
+    const response = await fetch("employee.xml", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "text/xml",
+      },
+      body: xmlString,
+    });
+
+    if (response.ok) {
+      displayOutput("XML file saved successfully.");
+    } else {
+      displayOutput("Error saving XML file.");
+    }
+  } catch (error) {
+    console.error("Error saving XML:", error);
+    displayOutput("Error saving XML file.");
+  }
 }
+
 // ---------------------------------------------------------------------------------------------------------
 // Display Function:
 function displayOutput(message) {
